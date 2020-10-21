@@ -1,0 +1,36 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap";
+
+:root {
+  --background: #f7f7f8;
+  --background-second: #ffffff;
+  --background-third: #e5e5e5;
+  --background-forth: #efeff1;
+  --text-color: #0e0e10;
+  --grey: #9d9d9d;
+  --grey-light: #c1c3c3;
+  --blue: #75acff;
+  --baby-blue: #adc0d2;
+  --baby-blue-lighter: #8ba0b2;
+  --nav-width: 950px;
+  --nav-height: 60px;
+  --border-radius: 3px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: Noto Sans KR, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif !important;
+  background: var(--background);
+}
+
