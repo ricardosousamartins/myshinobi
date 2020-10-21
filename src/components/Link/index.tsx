@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom"
 import * as SC from './styles'
 
 interface ILinkProps {
-    to: string
+    to: string,
 }
 
 export const Link: React.FC<ILinkProps> = ({

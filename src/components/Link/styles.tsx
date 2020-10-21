@@ -1,14 +1,14 @@
 import styled, { css } from "styled-components"
 import { Link } from "react-router-dom"
 
-type TPropType = {
+interface ILinkProps {
     active: Boolean
 }
 
-const LinkStyle = css`
+const LinkStyle = css<ILinkProps>`
   font-size: 1.4rem;
   font-weight: 500;
-  color: ${(props: TPropType) => (props.active ? `var(--grey)` : `var(--text-color)`)};
+  color: ${props => (props.active ? `var(--grey)` : `var(--text-color)`)};
   text-decoration: none;
 `
 
