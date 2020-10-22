@@ -22,6 +22,7 @@ export const Aside = styled.aside`
     display: grid;
     grid-auto-flow: column;
     grid-gap: 30px;
+    margin: 0 5px;
 `
 
 export const Logo = styled.img`
