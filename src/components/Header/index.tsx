@@ -5,12 +5,6 @@ import { Button } from '../Button'
 import Logo from '../../images/logo.png'
 import * as SC from './styles'
 
-const theme = {
-    background: "var(--background-forth)",
-    weight: "600",
-    color: "var(--text-color)",
-}
-
 export const Header: React.FC = () => {
     return (
         <SC.Header>
@@ -25,7 +19,7 @@ export const Header: React.FC = () => {
                         <Link to="/discord">Discord</Link>
                     </SC.Aside>
                     <Link to="/admin">
-                        <Button {...theme}>Admin</Button>
+                        <Button>Admin</Button>
                     </Link>
                 </SC.Links>
             </SC.Nav>

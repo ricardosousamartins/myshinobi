@@ -5,12 +5,6 @@ import { Button } from '../Button'
 
 import * as SC from './styles'
 
-const theme = {
-    background: "var(--blue)",
-    weight: "bolder",
-    color: "#ffff",
-}
-
 interface IFourZeroFourProps {
     title?: string,
 }
@@ -21,11 +15,10 @@ export const FourZeroFour: React.FC<IFourZeroFourProps> = ({
     return (
         <SC.Wrapper>
             <Heading>
-                {!title && "Couldn't find this page ㅜ-ㅜ"}
-                {title}
+                {title ? title : "Couldn't find this page ㅜ-ㅜ"}
             </Heading>
             <Link to="/">
-                <Button {...theme}>Return Home</Button>
+                <Button>Return Home</Button>
             </Link>
         </SC.Wrapper>
     )

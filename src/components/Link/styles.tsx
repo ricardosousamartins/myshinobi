@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components"
 import { Link } from "react-router-dom"
 
-interface ILinkProps {
+interface ILinkStyleProps {
     active: Boolean
 }
 
-const LinkStyle = css<ILinkProps>`
+const LinkStyle = css<ILinkStyleProps>`
   font-size: 1.4rem;
   font-weight: 500;
   color: ${props => (props.active ? `var(--grey)` : `var(--text-color)`)};
