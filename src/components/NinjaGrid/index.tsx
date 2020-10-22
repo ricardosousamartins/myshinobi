@@ -2,6 +2,7 @@ import React from 'react'
 import { useQuery } from '@apollo/client';
 import { Loader } from '../Loader'
 import { Heading } from '../Heading'
+
 import * as SC from './styles'
 
 interface INinjaGridProps {
