@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Key } from 'react'
 import { useQuery } from '@apollo/client';
 import { Loader } from '../Loader'
 import { Heading } from '../Heading'
@@ -25,11 +25,12 @@ export const NinjaGrid: React.FC<INinjaGridProps> = ({
             {data.Ninjas
                 .map((
                     data: any,
-                    ) => {
+                    key: Key,
+                ) => {
                     const { Name, Images } = data
 
                     return (
-                        <SC.Grid>
+                        <SC.Grid key={key}>
                             <SC.Figure>
                                 <SC.Image src={Images[0]} />
                             </SC.Figure>
